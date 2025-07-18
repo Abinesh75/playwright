@@ -1,0 +1,34 @@
+git init
+git branch demo
+git branch -M demo
+git config --global user.name  "Your Name"
+git config --global user.email "Your EmailID"
+git status
+git add .
+git commit -m "write message here with limit 50 word"
+git remote add origin your repo link
+git add .
+git push origin branchName 
+
+git checkout [branch name] => to switch the branch which we want.
+git checkout -b [branch name] => it will create a new branch and also copy the files present in the branch which we are working [simply creates duplicate branch].
+git push origin [branch name] => it will push to the github repos which have been saved in the local git.
+git pull --rebase origin main => it will pull the files pathway from the github repos to the local git.
+git push => now we are push the local to the github repos
+$ git push -u origin [branch name] => it will push if the git bash shows upstream.
+
+upstream => it will save the connects of the repos like where we are going to do push or pull actions[for eg: manage passwords present in the any browser].
+
+
+To remove the branch 
+git branch => for checking the branch 
+git branch -d [branch name] => deleting the branch locally.
+git push origin --delete[branch name] => delete the branch
+
+To replace the new url for repos
+git remote set -url origin
+
+updating main from another branch (demo branch has 3 files and main has 2 files)
+git checkout main
+git merge [branch name]
+git push =>now every branch has same 3 files
