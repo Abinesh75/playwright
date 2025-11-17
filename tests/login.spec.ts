@@ -10,7 +10,7 @@ test("Login test",async()=>{
     const button: Locator = await page.locator("[type='submit']");
 
     await email.fill('abineshab30@gmail.com');
-    await password.fill('Tamil@30');
+    await password.fill('Abinesh@123');
     await button.click();
 
     const title = await page.title();
